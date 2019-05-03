@@ -5,12 +5,35 @@
     <meta charset="utf-8">
     <style>
     /*GLOBAL STYLES*/
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 7vh;
+      margin-top: 0;
+    }
       a {
-        color: red;
+        color: rgb(236, 130, 242);
+      }
+      h2 {
+        font-size: 30px;
       }
     /*BIO STYLES*/
+    .bio-wrapper{
+      font-size: 24px;
+    }
       .bio-box {
         border: 1px solid black;
+        width: 50%;
+        font-size: 1rem;
+        padding: 20px;
+      }
+      .bio-box h3{
+        font-size: 1.5em;
+      }
+      .bio-copy {
+        font-size: 1em;
       }
       .bio-copy a {
         color: green;
@@ -18,11 +41,19 @@
     /*SOCIAL SYTLES*/
       
       .social-link {
+        background: rgba(150, 150, 150, 0.5);
         color: blue;
+      }
+    /* HERO STYLES */
+      .full-hero {
+        background-color: #c7dbfc;
+        height: 50vw;
+        width: 50vw;
       }
     </style>
   </head>
   <body>
+    <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
     <ul>
       <li>
@@ -35,7 +66,9 @@
         <a href="http://example.com/">Link</a>
       </li>
     </ul>
+    </div>
     <h2>I'm an h2</h2>
+    <div class="bio-wrapper">
     <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="http://twitter.com/mhartl" class="social-link">here</a>
@@ -70,7 +103,7 @@
     <div class="bio-box">
       <h3>Nick Merwin</h3>
       <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
-      <div class="bio-box">
+      <div class="bio-copy">
       <p>
         You may have seen him shredding guitar live with Capital Cities on Jimmy
         Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
@@ -81,9 +114,12 @@
     </div>
     <div class="bio-box">
       <h3>??</h3>
+      <div class="bio-copy">
       <p>
         The Future
       </p>
+      </div>
+    </div>
     </div>
   </body>
 </html>
